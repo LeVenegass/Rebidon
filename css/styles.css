@@ -10824,3 +10824,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.container-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formulario{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
