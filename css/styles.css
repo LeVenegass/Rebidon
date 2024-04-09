@@ -10871,31 +10871,23 @@ textarea.form-control-lg {
 }
 #img-footer{
   position: relative;
-  top: 15.5rem;
-  bottom: 22rem;
-  left: 10rem;
+  top: 23rem;
+  bottom: 0rem;
+  right: 0rem;
   padding: 10px;
 }
 
 .container-img{
-  display: block;
+  display: inline;
   line-height: 0;
   font-size: 0;
-
-}
-/*.container-tex{
-  
-  display: inline-block;
-  position: relative;
-  left: 59.3rem;
-  bottom: 12rem;
+  right: 100px;
 }
 
-
-/*.texto{
+#descripcion{
   color: white;
-  text-align: right;
-  width: 50%;
-  text-align: center;
-  justify-content: center;
+}
+.container p{
+  margin-top: 20px;
+  color: white;
 }
