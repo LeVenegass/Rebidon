@@ -8,8 +8,10 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
     }
-
-    body{
-        background-color: aqua;
-    }
-    
+    .card {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 5);
+        transition: none;
+        }
+    .card:hover {
+    transform: none;
+    } 

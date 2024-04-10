@@ -10824,15 +10824,96 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.container-form{
+
+.botones {
+  min-width: 240px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-#formulario{
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.botones a{
+  text-decoration: none;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+.botones a:hover{
+  transform: scale(1.2);
+}
+
+#ins{
+  margin-right: 10px;
+}
+#fa{
+  margin-right: 10px;
+}
+#what{
+  margin-right: 10px;
+}
+#cont{
+  text-decoration: none;
+}
+#nos{
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+#red{
+  text-decoration: none;
+}
+#img-footer{
+  position: relative;
+  top: 21rem;
+  bottom: 0rem;
+  right: 0rem;
+  padding: 10px;
+}
+
+.container-img{
+  display: inline;
+  line-height: 0;
+  font-size: 0;
+  right: 100px;
+}
+
+#descripcion{
+  color: white;
+}
+.container p{
+  margin-top: 20px;
+  color: white;
+}
+#boton{
+  margin-bottom: 10px;
+  position: relative;
+  justify-items: center;
+  text-align: center;
+}
+.modal-body p{
+  color: #000;
+}
+#imgmodal{
+align-items: center;
+align-content: center;
+text-align: center;
+margin-left: 5.5rem;
+}
+
+#certi{
+  border: solid red;
+  position: absolute;
+  left: 345px;
+  top: 346px;
+  padding-top: 20px;
+  padding-left: 32px;
+  padding-right: 140px;
+  visibility: hidden;
 }
