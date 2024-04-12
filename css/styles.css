@@ -10928,6 +10928,19 @@ margin-left: 5.5rem;
 }
 #checktos{
   position: absolute;
-  left: 84.5%;
-  bottom: 36.2%;
+  left: 24.5%;
+  bottom: 39.7%;
 }
+.card {
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.modal.modal-zoom.fade:not(.show) .modal-dialog {
+  transform: scale(0.8);
+}
+
