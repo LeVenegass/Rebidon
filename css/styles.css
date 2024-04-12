@@ -10,6 +10,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10916,4 +10922,12 @@ margin-left: 5.5rem;
   padding-left: 32px;
   padding-right: 140px;
   visibility: hidden;
+}
+.my-section {
+  margin-bottom: 200px;
+}
+#checktos{
+  position: absolute;
+  left: 90%;
+  bottom: 34.6%;
 }
