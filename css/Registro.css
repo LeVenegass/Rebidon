@@ -35,3 +35,7 @@ padding: 50px 60px 70px;
 .card:hover{
     transform: scale(1.0);
 }
+.gradient-custom23{
+        background: linear-gradient(#2960f7, rgb(26, 43, 66));
+    
+}

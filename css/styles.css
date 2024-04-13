@@ -10940,5 +10940,11 @@ margin-left: 5.5rem;
   transform: scale(1.1);
 }
 
-
+#entrega{
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
 
