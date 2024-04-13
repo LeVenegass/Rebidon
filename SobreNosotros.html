@@ -5,32 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Sobre Nosotros</title>
+        <title>Tienda Rebidon</title>
+        <!--Iconos-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/icon.png" />
         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/stySobreNosotros.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Barra de navegacion-->
+    <div class=barra-navegacion>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <strong><a class="navbar-brand" href="#!">REBIDON</a> </strong>
                 <img src="assets/icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-1">
+                <strong><a class="navbar-brand" href="#!">REBIDON</a> </strong>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contacto</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
+                                <li><a class="dropdown-item" href="index.html">Todos los productos</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Entrar</a></li>
+                                <li><a class="dropdown-item" href="Login.html">Entrar</a></li>
                                 <li><a class="dropdown-item" href="#!">Registrarse</a></li>
-                                <li><a class="dropdown-item" href="#!">Sobre nosotros</a></li>
+                                <li><a class="dropdown-item" href="SobreNosotros.html">Sobre Nosotros</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -38,32 +45,53 @@
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Carro
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            <span class="badge bg-dark text-white ms-1 rounded-pill products-count">0</span>
                         </button>
                     </form>
                 </div>
             </div>
         </nav>
-        <div class="banner-aguas">
-            <img src="img/sobrenosotros3.jpeg" alt="banner">
-        </div>
-        
+    </div>
         <!-- Header-->
-        <header class="py-5">
-            <div class="container px-lg-5">
+        <header class="">
+            <header class="bg-dark py-1">
+                <div class="container px-1">
+                    <div class="row gx-1 justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="text-center my-1">
+                                <img src="img/Cuídate a ti mismo con nuestra Agua..png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <!-- Header-->
+
+        <!--Quienes somos body-->
+            <div class="container px-lg-3">
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">Quienes somos?</h1>
-                        <p class="fs-4">REBIDÓN es una firma con un cuarto de siglo de experiencia proporcionando una variedad de respuestas para el sector de los contenedores industriales, accesorios y herramientas. Nos hemos especializado en suministrar soluciones de primera categoría a nuestros clientes. Dentro de nuestra gama de productos, se incluyen recipientes IBC, una amplia selección de botellas, bidones, tambores y más.
+                        <h1 class="display-5 fw-bold">¿Quienes somos?</h1>
+                        <p class="fs-4 text-black">REBIDÓN es una firma con un cuarto de siglo de experiencia proporcionando una variedad de respuestas para el sector de los contenedores industriales, accesorios y herramientas. Nos hemos especializado en suministrar soluciones de primera categoría a nuestros clientes. Dentro de nuestra gama de productos, se incluyen recipientes IBC, una amplia selección de botellas, bidones, tambores y más.
                             Nuestro enfoque se basa en la colaboración y la mejora continua. Mantenemos una comunicación fluida con nuestros clientes y proveedores para asegurar la excelencia y satisfacer las necesidades de aquellos que requieren almacenar o transportar líquidos de forma segura y fiable, siempre manteniendo un compromiso con el cuidado del medio ambiente.</p>
                         <a class="btn btn-primary btn-lg" href="Contactanos.html">CONTACTANOS</a>
                     </div>
                 </div>
             </div>
-        </header>
+        <!--Quienes somos body-->
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        <footer class="py-5 bg-black">
+            <div class="container">
+            <div class="container"> <a href="Contactanos.html"class="m-0 text-white text-center" id="cont"><p>Contacto</p></a></div>
+            <div class="container"> <a href="SobreNosotros.html"class="m-0 text-white text-center" id="nos"><p>Sobre Nosotros</p></a></div>
+            <div class="container"> <a href="#"class="m-0 text-white text-center" id="red"><p>Redes Sociales</p></a></div>
+            
+            <section class="botones">
+                <a href="https://www.instagram.com/duocucsanjoaquin" class="fa fa-instagram" id="ins"></a>
+                <a href="https://web.facebook.com/DuocUC.SanJoaquin" class="fa fa-facebook" id="fa"></a>
+                <a href="https://api.whatsapp.com/send/?phone=56936639565&text&type=phone_number&app_absent=0" class="fa fa-whatsapp" id="what"></a>
+            </section>
+            <div class="container"><p class="m-0 text-white text-center text-uppercase fs-5 fw-bold mt-5" >Copyright &copy; Rebidon 2024</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
