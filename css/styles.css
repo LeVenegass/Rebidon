@@ -10947,3 +10947,41 @@ margin-left: 5.5rem;
   display: flex;
   justify-content: center;
 }
+.mostrar{
+text-decoration: none;
+}
+.info{
+  text-decoration: none;
+}
+
+#contenedor-transbank{
+  background-color: #dfdfdf;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+#transbank{
+width: 399;
+height: 138px
+}
+#mapa{
+  width: 400px;
+  height: 400px;
+  margin-left: 30%;
+  top: 3%;
+}
+#texto-mapa{
+position: absolute;
+right: 20%;
+top: 232%;
+left: 53%;
+}
+.boton{
+  text-decoration: none;
+}
+#boton-mapa{
+  position: absolute;
+  right: 23%;
+  top: 252%;
+  left: 62.4%;
+}
