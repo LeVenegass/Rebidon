@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Inicio Rebidon</title>
+        <!--Iconos-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/icon.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+</head>
+<body>
+    <div class="text-center mt-0 bg-primary" >
+        <h1 class="mt-0 mb-0 text-center fs-5 text-white">
+            Precios especiales para distribuidores y almacenes no dudes en preguntar si existen descuentos para el tuyo. </h1>
+    </div>
+    <div class=barra-navegacion>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <img src="assets/icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-1">
+                <strong><a class="navbar-brand" href="Inicio.html">REBIDON</a> </strong>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contacto</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Todos los productos</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="Login.html">Entrar</a></li>
+                                <li><a class="dropdown-item" href="Registro.html">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="SobreNosotros.html">Sobre Nosotros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carro
+                            <span class="badge bg-dark text-white ms-1 rounded-pill products-count">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Carrousel-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/banner aguas  andes.jpeg" class="d-block w-75 h-50 img-fluid mx-auto" alt="andes">
+            </div>
+        <div class="carousel-item">
+            <img src="img/1-1.png" class="d-block w-75 h-50 img-fluid mx-auto" alt="glaciar">
+        </div>
+        </div>
+    </div>
+    <H1 class="text-center mt-5 mb-0">Productos en <strong class="text-danger">tendencia</strong></H1>
+    <!--Toast de alerta-->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="saludoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">¡Bienvenido/a!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+        </div>
+        <div class="toast-body text-center">
+            <p>Gracias por visitar <strong>Rebidon</strong>.</p>
+            <p>Si presentas algun inconveniente, no dudes en escribirnos, haciendo tu solicitud en el siguente botón</p>
+            <a href="Contactanos.html" class="btn btn-primary mt-2 mx-auto">Contactanos</a>
+        </div>
+    </div>
+</div>
+<!--Inicio-->
+    <section class="py-0">
+        <div class="container px-4 px-lg-5 mt-5">
+            <button type="button" class="btn btn-outline-secondary mb-3">
+                <a href="index.html" class="text-black mostrar">Mostrar mas</a>
+            </button>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <!-- Modal -->
+                    <div class="modal fade" id="Despacho" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#Despacho" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Despacho">Descripcion del articulo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                                <div class="modal-body">
+                                                    <h2 class="mt-3 text-center"><strong>100 Bidones de agua</strong></h2>
+                                                    <p class="text-center">
+                                                        "¡Recarga y ahorra! Obtén 20 recargas de agua con sellos de calidad y disfruta de la comodidad de tener agua fresca en tu hogar u oficina. Con un despacho incluido por tan solo 20 mil pesos, esta oferta es insuperable. Cada recarga viene sellada para garantizar la pureza y frescura del agua que consumes. No pierdas la oportunidad de asegurar tu hidratación con este conveniente paquete que te ofrece calidad y ahorro en cada entrega. ¡Haz tu pedido ahora y disfruta de la comodidad que mereces!"</p>
+                                                    <img src="img/recarga.png" id="imgmodal"  alt="recarga">
+                                                        </div>
+                                                    <div class="modal-footer">
+                                            <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Popular</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img/recarga.png" alt="recarga" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">20 Recargas de bidon mas sello y Despacho</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through"></span>
+                                $20.000
+                                <p class="text-black mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique libero sint fugit architecto maxime, facere veritatis adipisci omnis ut sapiente!</p>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#Despacho"href="#">Vista previa</a></div>
+                            <div class="text-center"><a class="btn btn-success mt-2" href="#">Añadir al carro</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                        <!-- Modal -->
+                        <div class="modal fade" id="botellas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#botellas" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="botellas">Descripcion del articulo</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                    <div class="modal-body">
+                                                        <h2 class="mt-3 text-center"><strong>Pack 20 botellas de agua 500cc</strong></h2>
+                                                        <p class="text-center">
+                                                            ¡Prepárate para mantenerte hidratado en todo momento con nuestro pack de 20 botellas de agua de 500cc! Cada botella está diseñada para ofrecerte frescura y pureza en cada sorbo, perfecta para llevar contigo a la oficina, al gimnasio, o simplemente para tener a mano en casa. Con un tamaño conveniente de 500cc, estas botellas son ideales para satisfacer tu sed en cualquier lugar. ¡Hazte con nuestro pack y asegura tu hidratación durante todo el día!</p>
+                                                        
+                                                        <img src="img/oferta.jpeg" id="imgmodal"  alt="botellas">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                            <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img/oferta.jpeg" alt="oferta" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Pack 20 botellas de agua 500cc</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$7.000</span>
+                                $5.000
+                                <p class="text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique libero sint fugit architecto maxime, facere veritatis adipisci omnis ut sapiente!</p>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#botellas"href="#">Vista previa</a></div>
+                            <div class="text-center"><a class="btn btn-success mt-2" href="#">Añadir al carro</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Descripcion del articulo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                                <div class="modal-body">
+                                                    <h2 class="mt-3 text-center"><strong>Manillas simples para bidones 10L - 20L</strong></h2>
+                                                    <p class="text-center">
+                                                        "¡Añade facilidad a tu hidratación! Nuestras manillas simples para bidones de 10L y 20L son la solución perfecta para transportar y manejar tus bidones con comodidad. Diseñadas para adaptarse perfectamente, estas manillas hacen que llevar tus bidones sea más fácil que nunca. ¡No más problemas al cargar con tus bidones! Añade estas manillas simples a tu pedido y simplifica tu vida cotidiana."</p>
+                                                    <img src="img/manillas-simples-300x300.png" id="imgmodal"  alt="manillas">
+                                                </div>
+                                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img/manillas-simples-300x300.png" alt="manillas" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Manillas simples para bidones 10L - 20L</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$5.000</span>
+                                $2.000
+                                <p class="text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique libero sint fugit architecto maxime, facere veritatis adipisci omnis ut sapiente!</p>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop"href="#">Vista previa</a></div>
+                            <div class="text-center"><a class="btn btn-success mt-2" href="#">Añadir al carro</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <!-- Modal -->
+                    <div class="modal fade" id="dispensador-sobre" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#dispensador-sobre" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="#dispensador-sobre">Descripcion del articulo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                                <div class="modal-body">
+                                                    <h2 class="mt-3 text-center"><strong>Dispensador de Sobremesa + 2 Bidones de 20L SIN MANILLAS</strong></h2>
+                                                    <p class="text-center">"¡Oferta imperdible! Obtén un dispensador de sobremesa junto con 2 bidones de 20 litros sin manillas por un precio increíble. 
+                                                        Antes a 120 mil pesos, ¡ahora solo 65 mil pesos! Este dispensador te brinda comodidad y practicidad para acceder al agua fresca en cualquier momento. 
+                                                        Los bidones de 20 litros, sin manillas, aseguran un fácil manejo y almacenamiento. 
+                                                        Aprovecha esta oportunidad para equipar tu hogar u oficina con todo lo necesario para mantenerse hidratado.
+                                                    ¡Haz tu pedido ahora y disfruta de esta oferta antes de que se agote!"</p>
+                                                    <img src="img/OFERTA-300x300.png" id="imgmodal" alt="oferta300">
+                                                </div>
+                                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img/OFERTA-300x300.png" alt="Dispensador" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Dispensador de Sobremesa + 2 Bidones de 20L SIN MANILLAS</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$120.000</span>
+                                $65.000
+                                <p class="text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique libero sint fugit architecto maxime, facere veritatis adipisci omnis ut sapiente!</p>
+                            </div>
+                        
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#dispensador-sobre"href="#">Vista previa</a></div>
+                            <div class="text-center"><a class="btn btn-success mt-2" href="#">Añadir al carro</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="container text-center mt-1 py-4" id="contenedor-transbank">
+        <h1 class="mt-2">Realiza todos tus pagos mediante</h1>
+        <h1 class="mt-0 mb-0"><strong>web</strong><strong class="text-warning">pay</strong> o Transferencia Bancaria</h1>
+            <div class="row">
+                <div class="col">
+                    <img src="img/webpay-logo-1.png" alt="Logo de Transbank Chile" id="transbank" class="img-fluid mt-2 mb-5 d-inline">
+                </div>
+                <div class="col">
+                    <img src="img/logo-transf-bank.png" alt="webpays" id="transbank" class="img-fluid mt-2 mb-5 d-inline">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mapa" class="mb-5">
+    </div>
+
+    <div class="text-center">
+        <p class="w-25 fw-bold" id="texto-mapa">REBIDÓN es una firma con un cuarto de siglo de experiencia proporcionando
+            una variedad de respuestas para el sector de los contenedores industriales, accesorios y herramientas.
+            <br>
+            Nos hemos especializado en suministrar soluciones de primera categoría a nuestros clientes. Dentro de nuestra gama
+            de productos, se incluyen recipientes IBC, una amplia selección de botellas, bidones, tambores y más.
+            
+    </div>
+            <button class="btn btn-outline-dark" id="boton-mapa"> <a class="text-black boton" href="SobreNosotros.html">Saber mas</a>
+            
+            </button>
+    </div>
+
+    <!-- Footer-->
+    <section>
+    <footer class="py-5 bg-black">
+        <div class="container">
+        <div class="container"> <a href="Contactanos.html"class="m-0 text-white text-center" id="cont"><p>Contacto</p></a></div>
+        <div class="container"> <a href="SobreNosotros.html"class="m-0 text-white text-center" id="nos"><p>Sobre Nosotros</p></a></div>
+        <div class="container"> <a href="#"class="m-0 text-white text-center" id="red"><p>Redes Sociales</p></a></div>
+        
+        <section class="botones">
+            <a href="https://www.instagram.com/duocucsanjoaquin" class="fa fa-instagram" id="ins"></a>
+            <a href="https://web.facebook.com/DuocUC.SanJoaquin" class="fa fa-facebook" id="fa"></a>
+            <a href="https://api.whatsapp.com/send/?phone=56936639565&text&type=phone_number&app_absent=0" class="fa fa-whatsapp" id="what"></a>
+        </section>
+        <div class="container"><p class="m-0 text-white text-center text-uppercase fs-5 fw-bold mt-5" >Copyright &copy; Rebidon 2024</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    
+    
+    
+    
+    
+    <script>
+            var map = L.map('mapa').setView([-33.50027, -70.616525],16)
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        L.marker([19.4327, -99.1331]).addTo(map).bindPopup("Zócalo de la Ciudad de México")
+        L.marker([19.4349, -99.1313]).addTo(map).bindPopup("Templo Mayor")
+
+        map.on('click', onMapClick)
+
+        function onMapClick(e){
+        alert("Posicion: " + e.lating)
+        }
+
+    </script>
+
+
+</body>
+</html>
