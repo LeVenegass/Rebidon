@@ -5,3 +5,7 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+document.addEventListener('DOMContentLoaded', function () {
+    var saludoToast = new bootstrap.Toast(document.getElementById('saludoToast'));
+    saludoToast.show();
+});
