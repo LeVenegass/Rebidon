@@ -9,3 +9,25 @@ document.addEventListener('DOMContentLoaded', function () {
     var saludoToast = new bootstrap.Toast(document.getElementById('saludoToast'));
     saludoToast.show();
 });
+
+$(document).ready(function(){
+    $('#contactForm').validate({
+        rules: {
+            FormNombre: {
+                required: true,
+                minlenght: 5
+            },
+            FormEmail : {
+                required: true
+            },
+            FormNumero: {
+                required: true,
+                minlenght: 9
+            },
+            FormMensaje :{
+                minlenght: 20
+            }
+        }
+
+    })
+})
