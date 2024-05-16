@@ -10832,3 +10832,12 @@ textarea.form-control-lg {
   width: 4rem;
   font-size: 2rem;
 }
+.logos__contacto{
+  display: grid;
+  place-items: center; /* Centra horizontal y verticalmente */
+  height: 100%;       /* Ejemplo: altura de la ventana gráfica */
+        
+}
+
+
+
