@@ -67,43 +67,45 @@
             </div>
         </nav>
     </div>
-    <!--Modal login/Register/Contraseña-->
+    <!--modal registro/login/recuperacion-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 d-flex text-center" id="staticBackdropLabel">Iniciar Sesion</h1>
+                    <h1 class="modal-title fs-5 d-flex text-center" id="staticBackdropLabel">Iniciar Sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div>
-                            <label class="mb-2 mt-1 fs-6 fw-bold">Ingresa tu correo</label>
+                    <form onsubmit="return validarInicioSesion();">
+                        <div class="mb-3">
+                            <label for="inputcorreo1" class="form-label fs-6 fw-bold">Ingresa tu correo</label>
                             <input type="email" id="inputcorreo1" class="form-control inputcorreo"
-                                placeholder="Ejemplo@email.com">
+                                placeholder="Ejemplo@email.com" required>
+                            <!-- Mensaje de error para el correo electrónico -->
+                            <div id="errorCorreo" class="invalid-feedback">Por favor ingresa un correo electrónico
+                                válido.
+                            </div>
                         </div>
-                        <div>
-                            <label class="mt-4 mb-2 fs-6 fw-bold">Ingresa tu contraseña</label>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label fs-6 fw-bold">Ingresa tu contraseña</label>
                             <input type="password" id="inputPassword" class="form-control inputcontraseña"
-                                aria-describedby="passwordHelpInline" placeholder="1234****">
+                                aria-describedby="passwordHelpInline" placeholder="1234****" required>
+                            <!-- Mensaje de error para la contraseña -->
+                            <div id="errorContraseña" class="invalid-feedback">La contraseña debe tener al menos 8
+                                caracteres.</div>
                         </div>
-                        <div class="form-check mt-3 me-2">
+                        <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Recuerdame
-                            </label>
+                            <label class="form-check-label" for="flexCheckDefault">Recuérdame</label>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
                             <p class="mt-4">
                                 <a data-bs-toggle="modal" data-bs-target="#contraseña" id="cursor" class="fw-bold">¿Haz
-                                    olvidado tu
-                                    contraseña?</a>
+                                    olvidado tu contraseña?</a>
                             </p>
                             <div class="ml-auto">
-                                <button type="submit" class="btn btn-outline-success mt-2">
-                                    Entrar
-                                </button>
+                                <button type="submit" class="btn btn-outline-success mt-2">Entrar</button>
                             </div>
                         </div>
                     </form>
@@ -111,70 +113,72 @@
             </div>
         </div>
     </div>
+
     <!--Registrarse-->
     <div class="modal fade" id="Register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrarse
-                    </h1>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrarse</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="">
-                            <label class="mb-2 mt-2 fs-6 fw-bold ">Ingresa tu nombre</label>
+                    <form onsubmit="return validarRegistro();">
+                        <div class="mb-3">
+                            <label for="inputnombre" class="form-label fs-6 fw-bold">Ingresa tu nombre</label>
                             <input type="text" id="inputnombre" class="form-control inputnombre"
-                                placeholder="Ej:Juanito Perez">
+                                placeholder="Ej: Juanito Perez" required>
                         </div>
-                        <div>
-                            <label class="mt-2 mb-2 fs-6 fw-bold">Ingresa tu correo</label>
+                        <div class="mb-3">
+                            <label for="inputcorreo2" class="form-label fs-6 fw-bold">Ingresa tu correo</label>
                             <input type="email" id="inputcorreo2" class="form-control inputcorreo"
-                                aria-describedby="passwordHelpInline" placeholder="Usuario@email.com">
+                                placeholder="Usuario@email.com" required>
+                            <div id="errorCorreo" class="invalid-feedback">Por favor ingresa un correo electrónico
+                                válido.
+                            </div>
                         </div>
-                        <div>
-                            <label class="mt-2 mb-2 fs-6 fw-bold">Ingresa tu contraseña <img src="assets/key-fill.svg"
-                                    height="16px" width="16px"></label>
-                            <input type="password" id="password" class="form-control inputcontraseña "
-                                aria-describedby="passwordHelpInline" placeholder="4-8 Caracteres">
+                        <div class="mb-3">
+                            <label for="password" class="form-label fs-6 fw-bold">Ingresa tu contraseña
+                                <img src="assets/key-fill.svg" height="16px" width="16px"></label>
+                            <input type="password" id="password" class="form-control inputcontraseña"
+                                placeholder="4-8 Caracteres" required>
+                            <div id="errorContraseñaRegistro" class="invalid-feedback">La contraseña debe tener al menos
+                                8
+                                caracteres.</div>
                         </div>
-                        <div>
-                            <label class="mt-2 mb-2 fs-6 fw-bold">Repite tu contraseña <img src="assets/key-fill.svg"
-                                    height="16px" width="16px"></label>
+                        <div class="mb-3">
+                            <label for="password2" class="form-label fs-6 fw-bold">Repite tu contraseña
+                                <img src="assets/key-fill.svg" height="16px" width="16px"></label>
                             <input type="password" id="password2" class="form-control inputcontraseña"
-                                aria-describedby="passwordHelpInline">
+                                placeholder="Repite tu contraseña" required>
+                            <div id="errorContraseñaRepetida" class="invalid-feedback">Las contraseñas no coinciden.
+                            </div>
                         </div>
-                        <div class="form-check mt-3 me-2">
+                        <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="show-password">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Mostrar contraseña
-                            </label>
+                            <label class="form-check-label" for="show-password">Mostrar contraseña</label>
                         </div>
-                        <div>
-                            <p class="mt-4 text-primary">
-                                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="cursor"
-                                    class="fw-bold">¿Ya
-                                    tienes
-                                    cuenta?</a>
+                        <div class="mb-3">
+                            <p class="text-primary">
+                                ¿Ya tienes cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="fw-bold">Inicia sesión aquí</a>
                             </p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <img src="assets/facebook.svg" height="30px" width="30px" class="mx-1" id="cursor">
-                                <img src="assets/google.svg" height="28px" width="28px" class="mx-1" id="cursor">
-                                <img src="assets/twitter-x.svg" height="28px" width="28px" class="mx-1" id="cursor">
+                                <img src="assets/facebook.svg" height="30px" width="30px" class="mx-1">
+                                <img src="assets/google.svg" height="28px" width="28px" class="mx-1">
+                                <img src="assets/twitter-x.svg" height="28px" width="28px" class="mx-1">
                             </div>
                             <div class="ml-auto">
-                                <button type="submit" class="btn btn-outline-success mt-2">
-                                    Registrarse
-                                </button>
+                                <button type="submit" class="btn btn-outline-success">Registrarse</button>
                             </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!--Perdida de contraseña-->
@@ -183,37 +187,41 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 d-flex text-center" id="staticBackdropLabel">Recuperacion</h1>
+                    <h1 class="modal-title fs-5 d-flex text-center" id="staticBackdropLabel">Recuperación</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div>
-                        <form>
-                            <label class="mb-2 mt-1 fs-6 fw-bold">Ingresa tu correo</label>
+                    <form onsubmit="return validarRecuperacion();">
+                        <div class="mb-3">
+                            <label for="inputcorreo3" class="form-label fs-6 fw-bold">Ingresa tu correo</label>
                             <input type="email" id="inputcorreo3" class="form-control inputcorreo"
-                                placeholder="Ejemplo@email.com">
-                    </div>
-                    <div class="form-check mt-3 me-2">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            <a href="assets/Terminos de servicio.pdf" id="cursor">Acepto los términos y condiciones</a>
-                        </label>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <p class="mt-0">
-                            Si ya tienes cuenta <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="cursor"
-                                class="fw-bold">Inicia sesión aquí</a>
-                        </p>
-                        <button type="submit" class="btn btn-outline-success mt-2">
-                            Registrarse
-                        </button>
-                    </div>
+                                placeholder="Ejemplo@email.com" required>
+                            <!-- Mensaje de error para el correo electrónico -->
+                            <div id="errorCorreoRecuperacion" class="invalid-feedback">Por favor ingresa un correo
+                                electrónico válido.</div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Acepto los términos y condiciones
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mt-0">
+                                Si ya tienes cuenta <a data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    id="cursor" class="fw-bold">Inicia sesión aquí</a>
+                            </p>
+                            <button type="submit" class="btn btn-outline-success mt-2">Enviar correo de
+                                recuperación</button>
+                        </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
+
+
+
     <!--Modal login/Register-->
     <!-- Header-->
     <header class="bg-dark py-1">
