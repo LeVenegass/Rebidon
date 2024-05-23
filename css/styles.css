@@ -11040,3 +11040,25 @@ left: 56.5%;
 .compradores_pelones{
   height:  300px 100px;
 }
+#modal-olvidado{
+  text-decoration: none;
+  cursor: pointer;
+}
+#cursor{
+  cursor: pointer;
+}
+#modalfooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#map{
+  height: 400px;
+  width: 500px;
+  border: solid black;
+  border-radius: 20px;
+}
+#text-mapa{
+    position: absolute;
+    margin-top: 4.5%;
+}

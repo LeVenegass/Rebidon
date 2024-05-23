@@ -1,136 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Tienda Rebidon</title>
-        <!--Iconos-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="img/droplet.svg" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <div class=barra-navegacion>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <img src="img/droplet.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-1">
-            <strong><a class="navbar-brand" href="Inicio.html">REBIDON</a> </strong>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contacto</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="index.html">Todos los productos</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="Login.html">Entrar</a></li>
-                                <li><a class="dropdown-item" href="Registro.html">Registrarse</a></li>
-                                <li><a class="dropdown-item" href="SobreNosotros.html">Sobre Nosotros</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Carro
-                            <span class="badge bg-dark text-white ms-1 rounded-pill products-count">0</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!--navbar-->
-    <body>
-<!--carrusel de imagenes-->
 
-            <div class="carousel-inner">
-                <div class="carousel-item active" id="carrouselitem">
-                        <img src="img/envasado-2.jpg" class="d-block w-75 img-fluid mx-auto" alt="claro">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tienda Rebidon</title>
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/droplet.svg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<div class=barra-navegacion>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <img src="img/droplet.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-1">
+            <strong><a class="navbar-brand" href="Inicio.html">REBIDON</a> </strong>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Todos los productos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="Login.html">Entrar</a></li>
+                            <li><a class="dropdown-item" href="Registro.html">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="SobreNosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carro
+                        <span class="badge bg-dark text-white ms-1 rounded-pill products-count">0</span>
+                    </button>
+                </form>
             </div>
         </div>
-        <header class="py-1">
-            <div class="container px-lg-5">
-                <div class="p-4 p-lg-5 rounded-4 text-center">
-                    <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">Certificacion Aguas Rio Claro</h1>
-                        <p class="fs-6 text-black text-start lh-base">
-                            En tiempos complicados, como son los que estamos viviendo, muchas veces es necesario hacer una pausa en nuestra rutina, 
-                            e intentar aunque sea por un instante olvidar los problemas que nos complican y darle una oportunidad a la vida. Es en ese 
-                            momento, cuando el simple hecho de tomar un vaso de agua, nos invita nuevamente a respirar y a seguir adelante. Es el poder 
-                            de este cristalino líquido. Y si es purificada de <strong>Aguas Río Claro</strong>, mil veces mejor.</p>
-                        <br>
-                        <p class="fs-6 text-black text-start lh-base">
-                            Muchos se preguntan…¿porqué tenemos que tomar agua? En <strong>Aguas Río Claro</strong>, tenemos la respuesta. 
-                            Simplemente porque hará lucir bien, te hidratará, ayudará a detener la vejez, elimina toxinas, 
-                            mantiene en un peso ideal y fortalece los huesos. En síntesis, es el mejor remedio para preservar
-                            una buena salud.  Si ya el agua pura es buena, imagina cuando la consumes completamente purificada. 
-                            Es ahí donde nosotros tenemos mucho que aportar.
+    </nav>
+</div>
+<!--navbar-->
+<!--Modal login/Register/Contraseña-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 d-flex text-center" id="staticBackdropLabel">Iniciar Sesion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div>
+                        <label class="mb-2 mt-1 fs-6 fw-bold">Ingresa tu correo</label>
+                        <input type="email" id="inputcorreo1" class="form-control inputcorreo"
+                            placeholder="Ejemplo@email.com">
+                    </div>
+                    <div>
+                        <label class="mt-4 mb-2 fs-6 fw-bold">Ingresa tu contraseña</label>
+                        <input type="password" id="inputPassword" class="form-control inputcontraseña"
+                            aria-describedby="passwordHelpInline" placeholder="1234****">
+                    </div>
+                    <div class="form-check mt-3 me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Recuerdame
+                        </label>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <p class="mt-4">
+                            <a data-bs-toggle="modal" data-bs-target="#contraseña" id="cursor" class="fw-bold">¿Haz
+                                olvidado tu
+                                contraseña?</a>
                         </p>
-                        <br>
-                        <p class="fs-6 text-black text-start lh-base">
-                            El agua purificada  de <strong>Aguas Río Claro</strong>, es súper limpia. No posee contaminantes, ni tampoco los 
-                            minerales que normalmente vienen en  su estado natural. Todo tipo de bacterias, parásitos y virus, 
-                            se eliminan en nuestro proceso de filtración y purificación. De sabor puro y refrescante, cada vez 
-                            que se consume, dan ganas de beber más y más. Eso sí, hay que tener ciertos cuidados al hacerlo.                            
-                        </p>
-                        <br>
-                        <p class="fs-6 text-black text-start lh-base">
-                            De partida, en <strong>Aguas Río Claro</strong> siempre sugerimos revisar la etiqueta de la marca, para comprobar si
-                            los datos impresos, indican si el agua purificada ha pasado por un proceso de filtración y purificación. 
-                            En el caso de <strong>Aguas Río Claro</strong>, esta garantía está dada por un control de muestras, que periódicamente se 
-                            envía a un laboratorio certificado, que en nuestro caso, es la empresa Quality Labs, entidad que 
-                            permanentemente está avalando la pureza y calidad de nuestro producto.
-                        </p>
-                        <br>
-                        <p class="fs-6 text-black text-start lh-base">
-                            Su último análisis fue el informe entregado el 15 de julio de este año, donde acreditó que las aguas 
-                            purificadas de <strong>Aguas Río Claro</strong>, tenían una turbiedad de apenas -05 de unidad nefelométrica de turbidez 
-                            (UNT). Igualmente un análisis, aún más completo, arrojó resultados muy favorables para su consumo. En 
-                            cuanto a Coliformes totales, Quality Labs indicó que en ella había -1 de Número Más Probable por 100 
-                            mililitros de muestra (NPM/100ml) y cuanto a detección de Escherichia Coli, los indicadores también 
-                            fueron -1 (NPM/100ml). Es decir garantía total de tranquilidad para su consumo.
-                        </p>
-                        <br>
-                        <p class="fs-6 text-black text-start lh-base">
-                            Al tener la garantía de un tercero, que avala que contamos con un producto Premium, en lo que agua 
-                            purificada se refiere, los planes de desarrollo corporativo no se hicieron esperar. Otra buena noticia 
-                            es saber que <strong>Aguas Río Claro</strong> cuenta con una reciente resolución de la Subsecretaría Ministerial de Salud 
-                            Pública del Maule. En ella se aprobó la apertura de un nuevo local para el envase de agua soda y purificada 
-                            en una de las principales arterias de Curicó, punto de venta desde donde seguiremos refrescando y cuidando 
-                            la salud de los maulinos. 
+                        <div class="ml-auto">
+                            <button type="submit" class="btn btn-outline-success mt-2">
+                                Entrar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Registrarse-->
+<div class="modal fade" id="Register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrarse
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="">
+                        <label class="mb-2 mt-2 fs-6 fw-bold ">Ingresa tu nombre</label>
+                        <input type="text" id="inputnombre" class="form-control inputnombre"
+                            placeholder="Ej:Juanito Perez">
+                    </div>
+                    <div>
+                        <label class="mt-2 mb-2 fs-6 fw-bold">Ingresa tu correo</label>
+                        <input type="email" id="inputcorreo2" class="form-control inputcorreo"
+                            aria-describedby="passwordHelpInline" placeholder="Usuario@email.com">
+                    </div>
+                    <div>
+                        <label class="mt-2 mb-2 fs-6 fw-bold">Ingresa tu contraseña <img src="assets/key-fill.svg"
+                                height="16px" width="16px"></label>
+                        <input type="password" id="password" class="form-control inputcontraseña "
+                            aria-describedby="passwordHelpInline" placeholder="4-8 Caracteres">
+                    </div>
+                    <div>
+                        <label class="mt-2 mb-2 fs-6 fw-bold">Repite tu contraseña <img src="assets/key-fill.svg"
+                                height="16px" width="16px"></label>
+                        <input type="password" id="password2" class="form-control inputcontraseña"
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="form-check mt-3 me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="show-password">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Mostrar contraseña
+                        </label>
+                    </div>
+                    <div>
+                        <p class="mt-4 text-primary">
+                            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="cursor" class="fw-bold">¿Ya
+                                tienes
+                                cuenta?</a>
                         </p>
                     </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div>
+                            <img src="assets/facebook.svg" height="30px" width="30px" class="mx-1" id="cursor">
+                            <img src="assets/google.svg" height="28px" width="28px" class="mx-1" id="cursor">
+                            <img src="assets/twitter-x.svg" height="28px" width="28px" class="mx-1" id="cursor">
+                        </div>
+                        <div class="ml-auto">
+                            <button type="submit" class="btn btn-outline-success mt-2">
+                                Registrarse
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--Perdida de contraseña-->
+<div class="modal fade" id="contraseña" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 d-flex text-center" id="staticBackdropLabel">Recuperacion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <form>
+                        <label class="mb-2 mt-1 fs-6 fw-bold">Ingresa tu correo</label>
+                        <input type="email" id="inputcorreo3" class="form-control inputcorreo"
+                            placeholder="Ejemplo@email.com">
+                </div>
+                <div class="form-check mt-3 me-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        <a href="assets/Terminos de servicio.pdf" id="cursor">Acepto los términos y condiciones</a>
+                    </label>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="mt-0">
+                        Si ya tienes cuenta <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="cursor"
+                            class="fw-bold">Inicia sesión aquí</a>
+                    </p>
+                    <button type="submit" class="btn btn-outline-success mt-2">
+                        Registrarse
+                    </button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Modal login/Register-->
+
+<body>
+    <!--carrusel de imagenes-->
+    <div class="carousel-inner">
+        <div class="carousel-item active" id="carrouselitem">
+            <img src="img/envasado-2.jpg" class="d-block w-75 img-fluid mx-auto" alt="claro">
+        </div>
+    </div>
+    <header class="py-1">
+        <div class="container px-lg-5">
+            <div class="p-4 p-lg-5 rounded-4 text-center">
+                <div class="m-4 m-lg-5">
+                    <h1 class="display-5 fw-bold">Certificacion Aguas Rio Claro</h1>
+                    <p class="fs-6 text-black text-start lh-base">
+                        En tiempos complicados, como son los que estamos viviendo, muchas veces es necesario hacer una
+                        pausa en nuestra rutina,
+                        e intentar aunque sea por un instante olvidar los problemas que nos complican y darle una
+                        oportunidad a la vida. Es en ese
+                        momento, cuando el simple hecho de tomar un vaso de agua, nos invita nuevamente a respirar y a
+                        seguir adelante. Es el poder
+                        de este cristalino líquido. Y si es purificada de <strong>Aguas Río Claro</strong>, mil veces
+                        mejor.</p>
+                    <br>
+                    <p class="fs-6 text-black text-start lh-base">
+                        Muchos se preguntan…¿porqué tenemos que tomar agua? En <strong>Aguas Río Claro</strong>, tenemos
+                        la respuesta.
+                        Simplemente porque hará lucir bien, te hidratará, ayudará a detener la vejez, elimina toxinas,
+                        mantiene en un peso ideal y fortalece los huesos. En síntesis, es el mejor remedio para
+                        preservar
+                        una buena salud. Si ya el agua pura es buena, imagina cuando la consumes completamente
+                        purificada.
+                        Es ahí donde nosotros tenemos mucho que aportar.
+                    </p>
+                    <br>
+                    <p class="fs-6 text-black text-start lh-base">
+                        El agua purificada de <strong>Aguas Río Claro</strong>, es súper limpia. No posee contaminantes,
+                        ni tampoco los
+                        minerales que normalmente vienen en su estado natural. Todo tipo de bacterias, parásitos y
+                        virus,
+                        se eliminan en nuestro proceso de filtración y purificación. De sabor puro y refrescante, cada
+                        vez
+                        que se consume, dan ganas de beber más y más. Eso sí, hay que tener ciertos cuidados al hacerlo.
+                    </p>
+                    <br>
+                    <p class="fs-6 text-black text-start lh-base">
+                        De partida, en <strong>Aguas Río Claro</strong> siempre sugerimos revisar la etiqueta de la
+                        marca, para comprobar si
+                        los datos impresos, indican si el agua purificada ha pasado por un proceso de filtración y
+                        purificación.
+                        En el caso de <strong>Aguas Río Claro</strong>, esta garantía está dada por un control de
+                        muestras, que periódicamente se
+                        envía a un laboratorio certificado, que en nuestro caso, es la empresa Quality Labs, entidad que
+                        permanentemente está avalando la pureza y calidad de nuestro producto.
+                    </p>
+                    <br>
+                    <p class="fs-6 text-black text-start lh-base">
+                        Su último análisis fue el informe entregado el 15 de julio de este año, donde acreditó que las
+                        aguas
+                        purificadas de <strong>Aguas Río Claro</strong>, tenían una turbiedad de apenas -05 de unidad
+                        nefelométrica de turbidez
+                        (UNT). Igualmente un análisis, aún más completo, arrojó resultados muy favorables para su
+                        consumo. En
+                        cuanto a Coliformes totales, Quality Labs indicó que en ella había -1 de Número Más Probable por
+                        100
+                        mililitros de muestra (NPM/100ml) y cuanto a detección de Escherichia Coli, los indicadores
+                        también
+                        fueron -1 (NPM/100ml). Es decir garantía total de tranquilidad para su consumo.
+                    </p>
+                    <br>
+                    <p class="fs-6 text-black text-start lh-base">
+                        Al tener la garantía de un tercero, que avala que contamos con un producto Premium, en lo que
+                        agua
+                        purificada se refiere, los planes de desarrollo corporativo no se hicieron esperar. Otra buena
+                        noticia
+                        es saber que <strong>Aguas Río Claro</strong> cuenta con una reciente resolución de la
+                        Subsecretaría Ministerial de Salud
+                        Pública del Maule. En ella se aprobó la apertura de un nuevo local para el envase de agua soda y
+                        purificada
+                        en una de las principales arterias de Curicó, punto de venta desde donde seguiremos refrescando
+                        y cuidando
+                        la salud de los maulinos.
+                    </p>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
 
     </section>
     <!-- Footer-->
     <footer class="py-5 bg-black">
         <div class="container">
-        <div class="container"> <a href="Contactanos.html"class="m-0 text-white text-center" id="cont"><p>Contacto</p></a></div>
-        <div class="container"> <a href="SobreNosotros.html"class="m-0 text-white text-center" id="nos"><p>Sobre Nosotros</p></a></div>
-        <div class="container"> <a href="#"class="m-0 text-white text-center" id="red"><p>Redes Sociales</p></a></div>
-        
-        <section class="botones">
-            <a href="https://www.instagram.com/duocucsanjoaquin" class="fa fa-instagram" id="ins"></a>
-            <a href="https://web.facebook.com/DuocUC.SanJoaquin" class="fa fa-facebook" id="fa"></a>
-            <a href="https://api.whatsapp.com/send/?phone=56936639565&text&type=phone_number&app_absent=0" class="fa fa-whatsapp" id="what"></a>
-        </section>
-        <div class="container"><p class="m-0 text-white text-center text-uppercase fs-5 fw-bold mt-5" >Copyright &copy; Rebidon 2024</p></div>
+            <div class="container"> <a href="Contactanos.html" class="m-0 text-white text-center" id="cont">
+                    <p>Contacto</p>
+                </a></div>
+            <div class="container"> <a href="SobreNosotros.html" class="m-0 text-white text-center" id="nos">
+                    <p>Sobre Nosotros</p>
+                </a></div>
+            <div class="container"> <a href="#" class="m-0 text-white text-center" id="red">
+                    <p>Redes Sociales</p>
+                </a></div>
+
+            <section class="botones">
+                <a href="https://www.instagram.com/duocucsanjoaquin" class="fa fa-instagram" id="ins"></a>
+                <a href="https://web.facebook.com/DuocUC.SanJoaquin" class="fa fa-facebook" id="fa"></a>
+                <a href="https://api.whatsapp.com/send/?phone=56936639565&text&type=phone_number&app_absent=0"
+                    class="fa fa-whatsapp" id="what"></a>
+            </section>
+            <div class="container">
+                <p class="m-0 text-white text-center text-uppercase fs-5 fw-bold mt-5">Copyright &copy; Rebidon 2024</p>
+            </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
